@@ -14,7 +14,7 @@ public class CalcApp {
 		
 		
 		/* operation에 따라 4칙 연산 객체를 생성하고 caculate 메서드를 호출합니다. */		
-		Arithmetic c = new Add();
+//		Arithmetic c = new Add();
 		
 	}
 }
