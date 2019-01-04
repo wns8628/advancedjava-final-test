@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 
-public class LoginMain {
+public class LoginMain { //문제를위한문제다 이렇게실제로짜면안됨 걍 익셉션 연습하라고내는거임 
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class LoginMain {
 		User savedUser = users.get( users.indexOf( user ) );
 		
 		if( !savedUser.getPassword().equals( user.getPassword()) ){
-			throw new PasswordDismatchException();
+			throw new PasswordDismatchException(); 
 		}
 	}
 }

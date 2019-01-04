@@ -7,8 +7,9 @@ public class MoneyTest {
         Money two   = new Money( 2 );
         Money three = new Money( 3 );
         Money ten   = new Money( 10 );
-        
-        if(    five.equals( two.add( three ) )
+         
+        //해쉬코드까지 오버라이드해라~뭐이런문제겟지
+        if(    five.equals( two.add( three ) ) 
             && three.equals( five.minus( two ) )
             && ten.equals( five.multiply( two ) )
             && two.equals( ten.devide( five ) ) )  {
