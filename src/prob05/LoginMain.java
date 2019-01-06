@@ -22,11 +22,22 @@ public class LoginMain { //문제를위한문제다 이렇게실제로짜면안�
 		/*
 		 *  로그인 처리 부분을 완성 합니다.
 		 */
+        //검사
+		User user = new User(id,password);
 		
-
+		try {
+			login(joinUsers,user);
+			System.out.println("로그인 성공");
+		} catch (UserNotFoundException e) {
+			System.out.println( e );
+		} catch (PasswordDismatchException e) {
+			System.out.println( e );
+		}
+		
 	}
 	
 	public static void login(List<User> users, User user ) throws UserNotFoundException, PasswordDismatchException {
+
 		if( !users.contains(user) ){
 			throw new UserNotFoundException();
 		}

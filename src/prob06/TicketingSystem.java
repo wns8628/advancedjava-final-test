@@ -34,7 +34,6 @@ public class TicketingSystem {
 				count++;
 			}
 		}	
-			
 		return count;
 	}
 }

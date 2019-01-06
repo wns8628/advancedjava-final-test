@@ -22,7 +22,7 @@ public class CalcApp {
 						break;
 				case("-"):
 				    	c = new Sub();
-						break;
+						break;      
 				case("*"):
 				    	c = new Mul();
 						break;
